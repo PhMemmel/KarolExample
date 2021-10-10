@@ -11,7 +11,7 @@ public class Suchspiel {
   private static final int LENGTH = 20;
   private static final int WIDTH = 20;
   private static final int HEIGHT = 10;
-  private static final int VERZOEGERUNG = 5; // in ms
+  private static final int VERZOEGERUNG = 10; // in ms
 
   /** Call this method to run this game. */
   public void start() {
