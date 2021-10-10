@@ -29,7 +29,7 @@ public class Suchspiel {
     }
 
     if (karol.IstRoboter()) {
-      karol.MeldungAusgeben("Gefunden");
+      karol.MeldungAusgeben("Gefunden!");
     } else {
       pavel.MeldungAusgeben("Gefunden!");
     }
@@ -43,6 +43,8 @@ public class Suchspiel {
     while (roboter.IstWand()) {
       roboter.LinksDrehen();
     }
-    roboter.Schritt();
+    if (!roboter.IstRoboter()) {
+      roboter.Schritt();
+    }
   }
 }
