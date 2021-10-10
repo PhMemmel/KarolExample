@@ -19,6 +19,11 @@ public class Pavel extends Roboter {
     super(inWelt);
   }
 
+  public void Umdrehen() {
+    LinksDrehen();
+    LinksDrehen();
+  }
+
   @Override
   public void Hinlegen() {
     super.Hinlegen("blau");
